@@ -32,6 +32,7 @@ jobs:
           version: latest
           args: release --clean
         env:
+          CGO_ENABLED: 0
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # Your GoReleaser Pro key, if you are using the 'goreleaser-pro'
           # distribution:
